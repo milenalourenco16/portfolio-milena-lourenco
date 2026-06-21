@@ -249,7 +249,9 @@ main p{
     padding: 20px;
     border-radius: 15px;
     width: 350px;
+    max-width: 350px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Título do projeto */
@@ -384,8 +386,10 @@ main p{
     }
 
     #menu{
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
         padding: 0;
     }
@@ -420,7 +424,7 @@ main p{
 
     .card{
         width: 100%;
-        max-width: 350px;
+        max-width: 100%;
     }
 
     #formContato input, #formContato textarea, #formContato button{
