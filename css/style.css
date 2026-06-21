@@ -220,6 +220,7 @@ main{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(166,61,64,0.15);
+    box-sizing: border-box;
 }
 
 /* Título principal da página */
@@ -383,6 +384,12 @@ main p{
     nav{
         flex-direction:column;
         gap: 15px;
+    }
+
+    main{
+        width: 90%;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     #menu{
