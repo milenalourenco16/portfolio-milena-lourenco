@@ -1,0 +1,355 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8F0;
+    color: #4A3F35;
+}
+
+
+/* CABEÇALHO E MENU DE NAVEGAÇÃO */
+header{
+    background-color: #E8B4BC;
+    padding: 15px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Logo com ícone de coração */
+.logo h1{
+    color: #6D1F2F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Coração decorativo no nome do site*/
+.logo h1::before{
+    content:  "♥ ";
+    color: #6D1F2F;
+}
+
+/* Menu de navegação */
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #6D1F2F;
+    font-weight: 600;
+}
+
+#menu a:hover{
+    color: #A63D40;
+}
+
+#tema{
+    background-color: #B85C6B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+#tema{
+    position: relative;
+    top: -1px;
+}
+
+
+#tema:hover{
+    background-color:#A63D40
+}
+
+/* SEÇAO SOBRE MIM */
+#sobre{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(166,61,64,0.15);
+    text-align: center;
+}
+
+#sobre h1{
+    color: #A63D40;
+}
+
+#sobre h2{
+    color: #6D1F2F;
+}
+
+/* Layout com imagem e texto lado a lado*/
+.sobre-conteudo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Avatar do perfil */
+.avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #E8B4BC;
+    flex-shrink: 0;
+}
+
+/* Texto ao lado da imagem */
+.texto-sobre{
+    text-align: left;
+    flex: 1;
+}
+
+/* Parágrafos com estilo de card */
+.texto-sobre p{
+    background-color: #F8D7DA;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Lista de hobbies sem bolinhas padrão */
+.hobbies{
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilo dos itens dos hobbies */
+.hobbies li{
+    background-color: #F8D7DA;
+    margin: 10px 0;
+    padding: 12px 20px;
+    border-radius: 12px;
+    max-width: 350px;
+    text-align: left;
+}
+
+/*Coração antes de cada hobby*/
+.hobbies li::before{
+    content:  "♥ ";
+    color: #A63D40;
+    font-size: 18px;
+}
+
+/* SEÇÃO FORMAÇÃO */
+
+#formacao{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(166,61,64,0.15)
+}
+
+#formacao h1{
+    text-align: center;
+    color: #A63D40;
+    margin-bottom: 30px;
+}
+
+/* Caixa de texto da formação acadêmica */
+
+.caixa-formacao{
+    background-color: #F8D7DA;
+    padding: 15px 20px;
+    border-radius: 12px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Card principal de cada bloco da formação */
+.card-formação{
+    background-color: #FCECEF;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(166,61,64,0.15);
+}
+
+.card-formacao h2{
+    color: #6D1F2F;
+    margin-top: 0;
+}
+
+/* Lista sem estilo padrão */
+.card-formacao ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* Itens da lista da formação */
+.card-formacao li{
+    background-color: #F8D7DA;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Coração decorativo nos itens */
+.card-formacao li::before{
+    content: "♥ ";
+    color: #A63D40;
+    margin-right: 6px;
+}
+
+/* SEÇÃO PORTFÓLIO */
+
+/* Container principal da página */
+main{
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(166,61,64,0.15);
+}
+
+/* Título principal da página */
+main h1{
+    text-align: center;
+    color: #A63D40;
+    margin-bottom: 30px;
+}
+
+/* Texto introdutório do portfólio */
+main p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Organização dos projetos em cards */
+.projetos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card individual de cada projeto */
+.card{
+    background-color: #F8D7DA;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Título do projeto */
+.card h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Descrição do projeto */
+.card p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Botão de acesso ao projeto */
+.card a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #C76A7A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.card a:hover{
+    transform: scale(1.05);
+}
+
+/* SEÇÃO CONTATO */
+
+/* Container principal da área de contato*/
+#contato{
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #F8D7DA;
+    border-radius: 20px;
+}
+
+/* Título da seção*/
+#contato h1{
+    text-align: center;
+    color: #A63D40;
+    margin-bottom: 20px;
+}
+
+/* Texto de apresentação do formulário */
+#contato p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Organização dos campos do formulário */
+#formContato{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rótulos dos campos */
+#formContato label{
+    margin-bottom: 5px;
+    color: #A63D40;
+    font-weight: bold;
+}
+
+/* Estilização dos campos de entrada */
+#formContato input, #formContato textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E8B4BC;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Espaçamento extra antes do botão */
+#formContato textarea{
+    margin-bottom: 30px;
+}
+
+/* Destaque visual ao selecionar um campo */
+#formContato input:focus, #formContato textarea:focus{
+    outline: none;
+    border: 2px solid #B85C6B;
+}
+
+/* Botão de envio do formulário */
+#formContato button{
+    background-color: #B85C6B;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+#formContato button:hover{
+    background-color: #A63D40
+}
