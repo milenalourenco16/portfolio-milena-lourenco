@@ -176,7 +176,7 @@ nav{
 }
 
 /* Card principal de cada bloco da formação */
-.card-formação{
+.card-formacao{
     background-color: #FCECEF;
     padding: 20px;
     border-radius: 15px;
@@ -352,4 +352,78 @@ main p{
 /* Efeito ao passar o mouse sobre o botão */
 #formContato button:hover{
     background-color: #A63D40
+}
+
+@media(max-width: 768px) {
+    
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+
+@media (max-width: 1024px){
+    #sobre, #formacao, #contato, main{
+        width: 90%;
+        padding: 30px;
+    }
+
+    .card{
+        width:300px;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 768px){
+    nav{
+        flex-direction:column;
+        gap: 15px;
+    }
+
+    #menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .logo h1{
+        font-size: 1.5rem;
+    }
+
+    #sobre, #formacao, #contato, main{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .sobre-conteudo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-sobre{
+        text-align: center;
+    }
+
+    .avatar{
+        width: 150px;
+        height: 150px;
+    }
+
+    .projetos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #formContato input, #formContato textarea, #formContato button{
+        width: 100%;
+    }
 }
